@@ -20,29 +20,28 @@
    17. Responsividade
 ═══════════════════════════════════════════════════════════ */
 
-
 /* ═══════════════════════════════════════════
    1. VARIÁVEIS & RESET
 ═══════════════════════════════════════════ */
 
 :root {
-  --navy:       #2b303a;
+  --navy: #2b303a;
   --navy-light: #363c49;
-  --gold:       #f0a800;
-  --gold-dark:  #c98e00;
-  --dark:       #4b4a4a;
-  --light:      #f3f3f3;
-  --white:      #ffffff;
+  --gold: #f0a800;
+  --gold-dark: #c98e00;
+  --dark: #4b4a4a;
+  --light: #f3f3f3;
+  --white: #ffffff;
 
-  --radius-sm:  6px;
-  --radius-md:  12px;
-  --radius-lg:  20px;
-  --radius-xl:  40px;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 40px;
 
-  --shadow-sm:  0 2px 12px rgba(43, 48, 58, 0.06);
-  --shadow-md:  0 4px 24px rgba(43, 48, 58, 0.10);
-  --shadow-lg:  0 8px 40px rgba(43, 48, 58, 0.14);
-  --shadow-xl:  0 20px 80px rgba(43, 48, 58, 0.20);
+  --shadow-sm: 0 2px 12px rgba(43, 48, 58, 0.06);
+  --shadow-md: 0 4px 24px rgba(43, 48, 58, 0.1);
+  --shadow-lg: 0 8px 40px rgba(43, 48, 58, 0.14);
+  --shadow-xl: 0 20px 80px rgba(43, 48, 58, 0.2);
 
   --transition: 0.25s ease;
 }
@@ -67,12 +66,15 @@ body {
   line-height: 1.6;
 }
 
-
 /* ═══════════════════════════════════════════
    2. TIPOGRAFIA BASE
 ═══════════════════════════════════════════ */
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: "Montserrat", sans-serif;
   line-height: 1.15;
 }
@@ -87,7 +89,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-
 
 /* ═══════════════════════════════════════════
    3. NAVEGAÇÃO
@@ -157,7 +158,9 @@ nav {
   text-transform: uppercase;
   padding: 10px 22px;
   border-radius: var(--radius-sm);
-  transition: background var(--transition), transform var(--transition);
+  transition:
+    background var(--transition),
+    transform var(--transition);
   white-space: nowrap;
   flex-shrink: 0;
 }
@@ -227,7 +230,6 @@ nav {
   border-radius: var(--radius-sm);
 }
 
-
 /* ═══════════════════════════════════════════
    4. HERO
 ═══════════════════════════════════════════ */
@@ -273,7 +275,11 @@ nav {
   width: 700px;
   height: 700px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(240, 168, 0, 0.12) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(240, 168, 0, 0.12) 0%,
+    transparent 70%
+  );
   pointer-events: none;
 }
 
@@ -384,7 +390,9 @@ nav {
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: var(--radius-md);
   padding: 28px 22px;
-  transition: background var(--transition), border-color var(--transition);
+  transition:
+    background var(--transition),
+    border-color var(--transition);
 }
 
 .stat-card:hover {
@@ -406,7 +414,6 @@ nav {
   color: rgba(255, 255, 255, 0.45);
   line-height: 1.4;
 }
-
 
 /* ═══════════════════════════════════════════
    5. SEÇÕES COMUNS
@@ -459,7 +466,6 @@ section {
   margin: 16px 0 32px;
 }
 
-
 /* ═══════════════════════════════════════════
    6. SOBRE
 ═══════════════════════════════════════════ */
@@ -490,7 +496,9 @@ section {
   padding: 28px 24px;
   border-top: 4px solid var(--gold);
   box-shadow: var(--shadow-sm);
-  transition: transform var(--transition), box-shadow var(--transition);
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition);
 }
 
 .mvp-card:hover {
@@ -655,98 +663,154 @@ section {
   padding: 4px 9px;
 }
 
-
 /* ═══════════════════════════════════════════
    7. SERVIÇOS
 ═══════════════════════════════════════════ */
 
 #servicos {
   background: var(--white);
+  padding: 100px 0;
 }
 
-.servicos-header {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  align-items: start;
+.servicos-header-center {
+  text-align: center;
   margin-bottom: 60px;
 }
 
-.categoria-group h4 {
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--gold);
-  border-bottom: 1px solid rgba(240, 168, 0, 0.2);
-  padding-bottom: 10px;
-  margin-bottom: 18px;
+.divider-center {
+  width: 60px;
+  height: 3px;
+  background: var(--gold);
+  margin: 20px auto;
 }
 
-.servicos-cards {
+/* Grid de 3 colunas similar ao layout da imagem */
+.servicos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* Estilo do Card Vertical */
+/* Estilo base para todos os cards (Ímpares: 1, 3, 5) */
+.servico-card-v2 {
+  background: var(--navy); 
+  border-radius: 24px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 24px;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+  height: 100%;
 }
 
-.servico-card {
-  background: var(--light);
-  border-radius: var(--radius-sm);
-  padding: 18px 22px;
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  border: 1px solid transparent;
-  transition: all var(--transition);
+/* --- ESTILO PARA OS CARDS 2, 4 e 6 (Pares) --- */
+.servico-card-v2:nth-child(even) {
+  background: var(--gold); /* Fundo Amarelo */
+  border-color: var(--gold);
 }
 
-.servico-card:hover {
-  background: var(--white);
-  border-color: rgba(240, 168, 0, 0.3);
-  box-shadow: var(--shadow-md);
-  transform: translateX(4px);
+/* Ajuste das cores dos textos nos cards AMARELOS */
+.servico-card-v2:nth-child(even) h5 {
+  color: var(--navy); /* Texto escuro para contraste no amarelo */
 }
 
-.servico-icon {
-  width: 38px;
-  height: 38px;
-  border-radius: 8px;
-  background: rgba(240, 168, 0, 0.15);
+.servico-card-v2:nth-child(even) p {
+  color: rgba(43, 48, 58, 0.8); /* Azul marinho com opacidade para o parágrafo */
+}
+
+.servico-card-v2:nth-child(even) .card-number {
+  border-color: rgba(43, 48, 58, 0.3);
+  color: var(--navy);
+}
+
+.servico-card-v2:nth-child(even) .card-arrow {
+  color: var(--navy);
+}
+
+/* --- AJUSTES DE HOVER PARA OS CARDS AMARELOS --- */
+.servico-card-v2:nth-child(even):hover {
+  background: var(--gold-dark); /* Escurece um pouco o amarelo no hover */
+  transform: translateY(-10px);
+}
+
+/* Efeito do círculo do número no card amarelo */
+.servico-card-v2:nth-child(even):hover .card-number {
+  background-color: var(--navy);
+  color: var(--white);
+  border-color: var(--navy);
+}
+
+/* Círculo com Número */
+.card-number {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 1px solid rgba(240, 168, 0, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1rem;
-  flex-shrink: 0;
-}
-
-.servico-card h5 {
-  font-size: 0.9rem;
-  font-weight: 700;
-  color: var(--navy);
-  margin-bottom: 3px;
-}
-
-.servico-card p {
-  font-size: 0.8rem;
-  color: var(--dark);
-  line-height: 1.5;
-}
-
-.servico-cta {
-  margin-left: auto;
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
   color: var(--gold);
-  flex-shrink: 0;
-  white-space: nowrap;
+  font-weight: 600;
+  font-size: 1rem;
+  background-color: transparent;
+  transition: all 0.3s ease;
 }
 
-.servico-cta:hover {
-  color: var(--gold-dark);
+.servico-card-v2:hover .card-number {
+  background-color: var(--gold); /* Fundo fica com a cor do número */
+  color: var(--white); /* Número fica branco */
+  border-color: var(--gold); /* Borda acompanha a cor */
 }
 
+.servico-card-v2 h5 {
+  color: var(--gold);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.servico-card-v2 p {
+  color: rgba(255, 255, 255, 0.6); /* Texto cinza suave para leitura */
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Seta de ação */
+.card-arrow {
+  color: var(--white);
+  font-size: 1.2rem;
+  margin-top: auto;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+  display: inline-block;
+  width: fit-content;
+}
+
+.servico-card-v2:hover .card-arrow {
+  color: var(--gold);
+  transform: translateX(8px);
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+  .servicos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .servicos-grid {
+    grid-template-columns: 1fr;
+  }
+  .servico-card-v2 {
+    padding: 30px;
+  }
+}
 
 /* ═══════════════════════════════════════════
    8. CLIENTES (MARQUEE)
@@ -807,8 +871,12 @@ section {
 }
 
 @keyframes marquee {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 /* Item individual da logo */
@@ -826,7 +894,9 @@ section {
   width: 140px;
   filter: brightness(0) invert(1);
   opacity: 0.28;
-  transition: opacity var(--transition), filter var(--transition);
+  transition:
+    opacity var(--transition),
+    filter var(--transition);
 }
 
 .cliente-logo-item:hover .cliente-logo-svg {
@@ -851,7 +921,6 @@ section {
 .cliente-logo:hover {
   color: var(--gold);
 }
-
 
 /* ═══════════════════════════════════════════
    9. ÁREA DE ATUAÇÃO & NÚMEROS
@@ -965,7 +1034,6 @@ section {
   color: var(--dark);
   line-height: 1.4;
 }
-
 
 /* ═══════════════════════════════════════════
    10. CASES / PORTFÓLIO
@@ -1105,7 +1173,6 @@ section {
   margin-top: 8px;
 }
 
-
 /* ═══════════════════════════════════════════
    11. DEPOIMENTOS (CARROSSEL)
 ═══════════════════════════════════════════ */
@@ -1114,7 +1181,8 @@ section {
   background: var(--navy);
   border-radius: var(--radius-lg);
   padding: 60px 48px;
-  margin-top: 60px;
+  max-width: 1200px;
+  margin: 60px auto;
   overflow: hidden;
   position: relative;
 }
@@ -1154,11 +1222,13 @@ section {
 
 /* Card de depoimento */
 .depoi-card {
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: var(--radius-md);
-  padding: 28px;
-  border: 1px solid rgba(255, 255, 255, 0.07);
-  transition: background var(--transition);
+  /* Supondo que este seja o nome da classe do seu card */
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Faz o card ocupar toda a altura da linha do grid */
+  padding: 30px;
+  background: var(--navy-light);
+  border-radius: 20px;
 }
 
 .depoi-card:hover {
@@ -1181,9 +1251,11 @@ section {
 }
 
 .depoi-author {
+  margin-top: auto; /* A MÁGICA: empurra tudo para o fim do card */
   display: flex;
   align-items: center;
   gap: 12px;
+  padding-top: 24px;
 }
 
 .depoi-avatar {
@@ -1194,8 +1266,15 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1rem;
   flex-shrink: 0;
+  overflow: hidden; /* Garante que a imagem respeite o círculo */
+}
+
+.depoi-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%; /* Mantém redondo */
 }
 
 .depoi-name {
@@ -1262,7 +1341,6 @@ section {
   border-radius: 4px;
 }
 
-
 /* ═══════════════════════════════════════════
    12. POR QUE NÓS
 ═══════════════════════════════════════════ */
@@ -1307,7 +1385,11 @@ section {
   width: 500px;
   height: 500px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(240, 168, 0, 0.08) 0%, transparent 65%);
+  background: radial-gradient(
+    circle,
+    rgba(240, 168, 0, 0.08) 0%,
+    transparent 65%
+  );
   top: -200px;
   right: -150px;
   pointer-events: none;
@@ -1374,7 +1456,9 @@ section {
   font-weight: 800;
   letter-spacing: 1px;
   text-transform: uppercase;
-  transition: background var(--transition), transform var(--transition);
+  transition:
+    background var(--transition),
+    transform var(--transition);
 }
 
 .btn-banner:hover {
@@ -1413,7 +1497,6 @@ section {
   transform: translate(-50%, -50%);
   z-index: 1;
 }
-
 
 /* ═══════════════════════════════════════════
    13. CONTATO & FORMULÁRIO
@@ -1544,7 +1627,9 @@ section {
   font-family: "Karla", sans-serif;
   font-size: 0.9rem;
   outline: none;
-  transition: border-color var(--transition), background var(--transition);
+  transition:
+    border-color var(--transition),
+    background var(--transition);
 }
 
 .form-group input::placeholder,
@@ -1588,7 +1673,9 @@ section {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: background var(--transition), transform var(--transition);
+  transition:
+    background var(--transition),
+    transform var(--transition);
   margin-top: 6px;
   display: flex;
   align-items: center;
@@ -1600,7 +1687,23 @@ section {
   background: var(--gold-dark);
   transform: translateY(-2px);
 }
+/* Espaçamento entre o ícone e o texto do label */
+.form-group label i {
+  margin-right: 8px;
+  color: var(--gold); /* Deixa os ícones do formulário dourados */
+  font-size: 0.9rem;
+}
 
+/* Ajuste para os ícones laterais de contato */
+.contato-item-icon i {
+  font-size: 1.2rem;
+}
+
+/* Efeito no botão ao passar o mouse */
+.form-submit:hover i {
+  transform: translateX(5px) translateY(-5px); /* Efeito de decolagem no avião */
+  transition: transform 0.3s ease;
+}
 
 /* ═══════════════════════════════════════════
    14. FOOTER
@@ -1652,7 +1755,9 @@ footer {
   justify-content: center;
   font-size: 0.85rem;
   color: rgba(255, 255, 255, 0.35);
-  transition: background var(--transition), color var(--transition);
+  transition:
+    background var(--transition),
+    color var(--transition);
 }
 
 .social-link:hover {
@@ -1703,7 +1808,32 @@ footer {
 .footer-copy span {
   color: var(--gold);
 }
+/* Mantenha o seu CSS original e apenas verifique/ajuste estas propriedades */
 
+.social-link {
+  width: 38px; /* Aumentei levemente para conforto visual */
+  height: 38px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem; /* Tamanho do ícone */
+  color: rgba(255, 255, 255, 0.35);
+  transition: all 0.3s ease; /* Usei 0.3s como fallback caso sua variável não carregue */
+  text-decoration: none;
+}
+
+.social-link:hover {
+  background: var(--gold);
+  color: #1e2229; /* Cor de fundo do footer para contraste */
+  transform: translateY(-3px); /* Efeito visual extra de 'pulo' */
+}
+
+/* Estilo para o coração no rodapé */
+.fa-heart {
+  margin: 0 2px;
+}
 
 /* ═══════════════════════════════════════════
    15. WHATSAPP FAB
@@ -1723,7 +1853,9 @@ footer {
   align-items: center;
   justify-content: center;
   animation: pulse-wpp 3s ease-in-out infinite;
-  transition: transform var(--transition), box-shadow var(--transition);
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition);
 }
 
 .whatsapp-fab:hover {
@@ -1733,10 +1865,14 @@ footer {
 }
 
 @keyframes pulse-wpp {
-  0%, 100% { box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4); }
-  50%       { box-shadow: 0 4px 36px rgba(37, 211, 102, 0.7); }
+  0%,
+  100% {
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  }
+  50% {
+    box-shadow: 0 4px 36px rgba(37, 211, 102, 0.7);
+  }
 }
-
 
 /* ═══════════════════════════════════════════
    16. ANIMAÇÕES (FADE-IN)
@@ -1745,7 +1881,9 @@ footer {
 .fade-in {
   opacity: 0;
   transform: translateY(28px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
 }
 
 .fade-in.visible {
@@ -1753,13 +1891,24 @@ footer {
   transform: translateY(0);
 }
 
-.fade-in-delay-1 { transition-delay: 0.1s; }
-.fade-in-delay-2 { transition-delay: 0.2s; }
-.fade-in-delay-3 { transition-delay: 0.3s; }
-.fade-in-delay-4 { transition-delay: 0.4s; }
-.fade-in-delay-5 { transition-delay: 0.5s; }
-.fade-in-delay-6 { transition-delay: 0.6s; }
-
+.fade-in-delay-1 {
+  transition-delay: 0.1s;
+}
+.fade-in-delay-2 {
+  transition-delay: 0.2s;
+}
+.fade-in-delay-3 {
+  transition-delay: 0.3s;
+}
+.fade-in-delay-4 {
+  transition-delay: 0.4s;
+}
+.fade-in-delay-5 {
+  transition-delay: 0.5s;
+}
+.fade-in-delay-6 {
+  transition-delay: 0.6s;
+}
 
 /* ═══════════════════════════════════════════
    17. RESPONSIVIDADE
@@ -1789,7 +1938,6 @@ footer {
 
 /* ── 900px ── */
 @media (max-width: 900px) {
-
   /* Nav */
   nav {
     padding: 0 24px;
@@ -1822,6 +1970,10 @@ footer {
   }
 
   /* Hero */
+
+  #home {
+    text-align: center;
+  }
   .hero-content {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -1830,6 +1982,10 @@ footer {
 
   .hero-stats {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .btn-secondary{
+    margin: auto;
   }
 
   /* Sobre */
@@ -1848,6 +2004,11 @@ footer {
   }
 
   /* Serviços */
+  #servicos{
+    text-align: center;
+  }
+
+
   .servicos-header {
     grid-template-columns: 1fr;
     gap: 36px;
@@ -1857,7 +2018,16 @@ footer {
     grid-template-columns: 1fr !important;
   }
 
+  .servico-card-v2{
+    display: flex;
+    align-items: center;
+   margin: 0 20px 0 20px;
+  }
+
   /* Atuação */
+  #atuacao{
+    text-align: center;
+  }
   .atuacao-grid {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -1883,6 +2053,12 @@ footer {
   /* Depoimentos */
   .depoi-slide {
     grid-template-columns: 1fr;
+  }
+
+  .depoi-card{
+    display: flex;
+    align-items: center;
+    text-align: justify;
   }
 
   .depoi-section {
@@ -1923,6 +2099,11 @@ footer {
   }
 
   /* Contato */
+  #contato{
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
   .contato-grid {
     grid-template-columns: 1fr;
     gap: 36px;
@@ -1939,7 +2120,13 @@ footer {
   }
 
   footer {
+    text-align: center;
     padding: 44px 24px 22px;
+  }
+  .footer-brand{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
   }
 
   .footer-bottom {
@@ -1951,7 +2138,6 @@ footer {
 
 /* ── 768px ── */
 @media (max-width: 768px) {
-
   .section-title {
     font-size: 1.75rem;
   }
@@ -1974,7 +2160,6 @@ footer {
 
 /* ── 480px ── */
 @media (max-width: 480px) {
-
   .hero-stats {
     grid-template-columns: 1fr 1fr;
   }

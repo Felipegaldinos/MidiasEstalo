@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Estalo — Agência de Marketing e Estratégia</title>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,400&family=Karla:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <link rel="stylesheet" href="css/stilo.css">
 <body>
 <!-- NAV -->
@@ -27,11 +28,12 @@
 <!-- MOBILE MENU -->
 <div id="mobile-menu" style="display:none;position:fixed;top:72px;left:0;right:0;background:var(--navy);z-index:999;padding:24px;border-bottom:2px solid var(--gold);">
   <ul style="list-style:none;display:flex;flex-direction:column;gap:20px;">
-    <li><a href="#sobre" onclick="toggleMenu()" style="color:var(--white);text-decoration:none;font-family:Montserrat,sans-serif;font-size:0.85rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;">Sobre</a></li>
+    <li><a href="peges/sobre.html" onclick="toggleMenu()" style="color:var(--white);text-decoration:none;font-family:Montserrat,sans-serif;font-size:0.85rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;">Sobre</a></li>
     <li><a href="#servicos" onclick="toggleMenu()" style="color:var(--white);text-decoration:none;font-family:Montserrat,sans-serif;font-size:0.85rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;">Serviços</a></li>
     <li><a href="#cases" onclick="toggleMenu()" style="color:var(--white);text-decoration:none;font-family:Montserrat,sans-serif;font-size:0.85rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;">Cases</a></li>
     <li><a href="#porque" onclick="toggleMenu()" style="color:var(--white);text-decoration:none;font-family:Montserrat,sans-serif;font-size:0.85rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;">Por Que Nós</a></li>
     <li><a href="#contato" onclick="toggleMenu()" style="color:var(--white);text-decoration:none;font-family:Montserrat,sans-serif;font-size:0.85rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;">Contato</a></li>
+     <li> <a class="nav-cta" href="#contato">Solicitar Proposta</a></li>
   </ul>
 </div>
 
@@ -41,7 +43,7 @@
   <div class="hero-accent-bar"></div>
   <div class="hero-blob"></div>
   <div class="hero-content">
-    <div>
+    <div >
       <div class="hero-tag fade-in">Agência de Marketing & Estratégia</div>
       <h1 class="hero-title fade-in fade-in-delay-1">
         Estratégia que
@@ -72,7 +74,7 @@
       </div>
       <div class="stat-card">
         <div class="stat-number">BR+</div>
-        <div class="stat-label">Presença no Brasil e Argentina</div>
+        <div class="stat-label">Presença no Brasil, Argentina e EUA</div>
       </div>
     </div>
   </div>
@@ -81,112 +83,82 @@
 <!-- SERVIÇOS -->
 <section id="servicos">
   <div class="section-inner">
-    <div class="servicos-header">
-      <div class="fade-in">
-        <span class="section-tag">O que fazemos</span>
-        <h2 class="section-title">Portfólio<br><span class="accent">Completo</span> de Serviços</h2>
-        <div class="divider"></div>
-        <p class="section-subtitle">Da estratégia à execução, oferecemos soluções integradas para fazer o seu negócio crescer de forma consistente e inteligente.</p>
-      </div>
-      <div class="fade-in fade-in-delay-1">
-        <!-- categorias 1 -->
-        <div class="categoria-group">
-          <h4>🧭 Estratégia & Marketing</h4>
-          <div class="servicos-cards">
-            <div class="servico-card">
-              <div class="servico-icon">📍</div>
-              <div>
-                <h5>Planejamento Estratégico</h5>
-                <p>Diagnóstico completo e plano de ação personalizado para o seu mercado.</p>
-              </div>
-              <a href="#contato" class="servico-cta">Saiba mais →</a>
-            </div>
-            <div class="servico-card">
-              <div class="servico-icon">📣</div>
-              <div>
-                <h5>Marketing Digital</h5>
-                <p>Campanhas integradas que geram leads qualificados e conversão real.</p>
-              </div>
-              <a href="#contato" class="servico-cta">Saiba mais →</a>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="servicos-header-center">
+      <span class="section-tag">Nossos Serviços</span>
+      <h2 class="section-title">Confira Nossos Serviços De<br><span class="accent">Agência De Destaque.</span></h2>
+      <div class="divider-center"></div>
     </div>
 
-    <!-- todas as categorias -->
-    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:40px;">
-      <div class="categoria-group fade-in">
-        <h4>🎨 Design & Identidade</h4>
-        <div class="servicos-cards">
-          <div class="servico-card">
-            <div class="servico-icon">✏️</div>
-            <div>
-              <h5>Identidade Visual</h5>
-              <p>Criação de marca que comunica valor e gera reconhecimento imediato.</p>
-            </div>
-            <a href="#contato" class="servico-cta">Saiba mais →</a>
-          </div>
-          <div class="servico-card">
-            <div class="servico-icon">🖥️</div>
-            <div>
-              <h5>Design de Peças</h5>
-              <p>Materiais visuais para digital e impresso com alta qualidade criativa.</p>
-            </div>
-            <a href="#contato" class="servico-cta">Saiba mais →</a>
-          </div>
+    <div class="servicos-grid">
+      
+      <div class="servico-card-v2 fade-in">
+        <div class="card-top">
+          <span class="card-number">1</span>
         </div>
+        <div class="card-content">
+          <h5>Criação de identidade visual e logomarca</h5>
+          <p>Criação de marca que comunica valor e gera reconhecimento imediato no mercado competitivo.</p>
+        </div>
+        <a href="#contato" class="card-arrow" aria-label="Saiba mais">
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
       </div>
 
-      <div class="categoria-group fade-in fade-in-delay-1">
-        <h4>✍️ Conteúdo & Copy</h4>
-        <div class="servicos-cards">
-          <div class="servico-card">
-            <div class="servico-icon">📝</div>
-            <div>
-              <h5>Produção de Conteúdo</h5>
-              <p>Textos, roteiros e conteúdo estratégico para todas as plataformas.</p>
-            </div>
-            <a href="#contato" class="servico-cta">Saiba mais →</a>
-          </div>
-          <div class="servico-card">
-            <div class="servico-icon">💬</div>
-            <div>
-              <h5>Copywriting & Vendas</h5>
-              <p>Copy persuasivo que converte visitantes em clientes.</p>
-            </div>
-            <a href="#contato" class="servico-cta">Saiba mais →</a>
-          </div>
+      <div class="servico-card-v2 fade-in">
+        <div class="card-top">
+          <span class="card-number">2</span>
         </div>
+        <div class="card-content">
+          <h5>Gerenciamento estratégico de redes sociais</h5>
+          <p>Presença digital consistente com foco em engajamento e conversão de seguidores.</p>
+        </div>
+        <a href="#contato" class="card-arrow"><i class="fa-solid fa-arrow-right"></i></a>
       </div>
 
-      <div class="categoria-group fade-in">
-        <h4>💻 Desenvolvimento</h4>
-        <div class="servicos-cards">
-          <div class="servico-card">
-            <div class="servico-icon">🌐</div>
-            <div>
-              <h5>Sites & Landing Pages</h5>
-              <p>Páginas de alta conversão otimizadas para SEO e performance.</p>
-            </div>
-            <a href="#contato" class="servico-cta">Saiba mais →</a>
-          </div>
+      <div class="servico-card-v2 fade-in">
+        <div class="card-top">
+          <span class="card-number">3</span>
         </div>
+        <div class="card-content">
+          <h5>Assessoria e consultoria em marketing</h5>
+          <p>Estratégia personalizada para empresas que buscam crescimento inteligente.</p>
+        </div>
+        <a href="#contato" class="card-arrow"><i class="fa-solid fa-arrow-right"></i></a>
       </div>
 
-      <div class="categoria-group fade-in fade-in-delay-1">
-        <h4>📊 Performance & Dados</h4>
-        <div class="servicos-cards">
-          <div class="servico-card">
-            <div class="servico-icon">📈</div>
-            <div>
-              <h5>Gestão de Tráfego Pago</h5>
-              <p>Campanhas de mídia paga com foco em ROI e crescimento escalável.</p>
-            </div>
-            <a href="#contato" class="servico-cta">Saiba mais →</a>
-          </div>
+      <div class="servico-card-v2 fade-in">
+        <div class="card-top">
+          <span class="card-number">4</span>
         </div>
+        <div class="card-content">
+          <h5>Tráfego pago e performance digital</h5>
+          <p>Campanhas otimizadas em Google e Meta Ads para escala e ROI comprovado.</p>
+        </div>
+        <a href="#contato" class="card-arrow"><i class="fa-solid fa-arrow-right"></i></a>
       </div>
+
+      <div class="servico-card-v2 fade-in">
+        <div class="card-top">
+          <span class="card-number">5</span>
+        </div>
+        <div class="card-content">
+          <h5>Site e Landing Page</h5>
+          <p>Desenvolvimento focado em velocidade, SEO e experiência do usuário (UX).</p>
+        </div>
+        <a href="#contato" class="card-arrow"><i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="servico-card-v2 fade-in">
+        <div class="card-top">
+          <span class="card-number">6</span>
+        </div>
+        <div class="card-content">
+          <h5>Treinamentos e soluções personalizadas</h5>
+          <p>Capacitação técnica e consultoria sob demanda para sua equipe comercial.</p>
+        </div>
+        <a href="#contato" class="card-arrow"><i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
     </div>
   </div>
 </section>
@@ -196,32 +168,43 @@
   <p class="clientes-label">+80 Clientes que confiam na Estalo</p>
   <div class="marquee-wrapper">
     <div class="marquee-track">
-      <!-- Track duplicado para loop -->
-      <span class="cliente-logo">Empresa Alpha</span>
-      <span class="cliente-logo">Grupo Beta</span>
-      <span class="cliente-logo">Marca Gama</span>
-      <span class="cliente-logo">Negócios Delta</span>
-      <span class="cliente-logo">Corporação Epsilon</span>
-      <span class="cliente-logo">Instituto Zeta</span>
-      <span class="cliente-logo">Empresa Eta</span>
-      <span class="cliente-logo">Grupo Theta</span>
-      <span class="cliente-logo">Marca Iota</span>
-      <span class="cliente-logo">Negócios Kappa</span>
-      <span class="cliente-logo">Startup Lambda</span>
-      <span class="cliente-logo">Holding Mu</span>
-      <!-- Duplicate for seamless loop -->
-      <span class="cliente-logo">Empresa Alpha</span>
-      <span class="cliente-logo">Grupo Beta</span>
-      <span class="cliente-logo">Marca Gama</span>
-      <span class="cliente-logo">Negócios Delta</span>
-      <span class="cliente-logo">Corporação Epsilon</span>
-      <span class="cliente-logo">Instituto Zeta</span>
-      <span class="cliente-logo">Empresa Eta</span>
-      <span class="cliente-logo">Grupo Theta</span>
-      <span class="cliente-logo">Marca Iota</span>
-      <span class="cliente-logo">Negócios Kappa</span>
-      <span class="cliente-logo">Startup Lambda</span>
-      <span class="cliente-logo">Holding Mu</span>
+      <div class="cliente-logo-item">
+        <img src="logos/cliente1.png" alt="Logo Cliente 1" class="cliente-logo-svg">
+      </div>
+      <div class="cliente-logo-item">
+        <img src="logos/cliente2.png" alt="Logo Cliente 2" class="cliente-logo-svg">
+      </div>
+      <div class="cliente-logo-item">
+        <img src="logos/cliente3.png" alt="Logo Cliente 3" class="cliente-logo-svg">
+      </div>
+      <div class="cliente-logo-item">
+        <img src="logos/cliente4.png" alt="Logo Cliente 4" class="cliente-logo-svg">
+      </div>
+      <div class="cliente-logo-item">
+        <img src="logos/cliente5.png" alt="Logo Cliente 5" class="cliente-logo-svg">
+      </div>
+      <div class="cliente-logo-item">
+        <img src="logos/cliente6.png" alt="Logo Cliente 6" class="cliente-logo-svg">
+      </div>
+
+      <div class="cliente-logo-item">
+        <img src="logos/cliente1.png" alt="Logo Cliente 1" class="cliente-logo-svg">
+      </div>
+      <div class="cliente-logo-item">
+        <img src="logos/cliente2.png" alt="Logo Cliente 2" class="cliente-logo-svg">
+      </div>
+      <div class="cliente-logo-item">
+        <img src="logos/cliente3.png" alt="Logo Cliente 3" class="cliente-logo-svg">
+      </div>
+      <div class="cliente-logo-item">
+        <img src="logos/cliente4.png" alt="Logo Cliente 4" class="cliente-logo-svg">
+      </div>
+      <div class="cliente-logo-item">
+        <img src="logos/cliente5.png" alt="Logo Cliente 5" class="cliente-logo-svg">
+      </div>
+      <div class="cliente-logo-item">
+        <img src="logos/cliente6.png" alt="Logo Cliente 6" class="cliente-logo-svg">
+      </div>
     </div>
   </div>
 </div>
@@ -363,7 +346,7 @@
           <div class="depoi-stars">★★★★★</div>
           <p class="depoi-text">"A Estalo entendeu exatamente o que precisávamos e entregou resultados que superaram nossas expectativas. Parceria incrível e muito profissional!"</p>
           <div class="depoi-author">
-            <div class="depoi-avatar">👤</div>
+            <div class="depoi-avatar"><img src="img/pessoa.png" alt="imagem pessoa"></div>
             <div>
               <div class="depoi-name">Ana Martins</div>
               <div class="depoi-empresa">Grupo Alpha</div>
@@ -374,7 +357,7 @@
           <div class="depoi-stars">★★★★★</div>
           <p class="depoi-text">"Profissionalismo, agilidade e resultados reais. A Estalo transformou nossa presença digital de forma consistente e estratégica."</p>
           <div class="depoi-author">
-            <div class="depoi-avatar">👤</div>
+            <div class="depoi-avatar"><img src="img/pessoa.png" alt="imagem pessoa"></div>
             <div>
               <div class="depoi-name">Carlos Eduardo</div>
               <div class="depoi-empresa">TechNova</div>
@@ -385,7 +368,7 @@
           <div class="depoi-stars">★★★★★</div>
           <p class="depoi-text">"Recomendo a Estalo para qualquer empresa que queira crescer com estratégia. O custo-benefício é excelente e o atendimento é diferenciado."</p>
           <div class="depoi-author">
-            <div class="depoi-avatar">👤</div>
+            <div class="depoi-avatar"><img src="img/pessoa.png" alt="imagem pessoa"></div>
             <div>
               <div class="depoi-name">Fernanda Lima</div>
               <div class="depoi-empresa">Moda Brasil</div>
@@ -399,7 +382,7 @@
           <div class="depoi-stars">★★★★★</div>
           <p class="depoi-text">"Em 3 meses de parceria já vimos resultados expressivos. A equipe da Estalo é extremamente dedicada e comprometida com o sucesso dos clientes."</p>
           <div class="depoi-author">
-            <div class="depoi-avatar">👤</div>
+            <div class="depoi-avatar"><img src="img/pessoa.png" alt="imagem pessoa"></div>
             <div>
               <div class="depoi-name">Roberto Silva</div>
               <div class="depoi-empresa">Construtora Delta</div>
@@ -410,7 +393,7 @@
           <div class="depoi-stars">★★★★★</div>
           <p class="depoi-text">"O trabalho de rebranding foi excepcional. Nossa marca ganhou uma nova identidade e o mercado respondeu muito positivamente."</p>
           <div class="depoi-author">
-            <div class="depoi-avatar">👤</div>
+            <div class="depoi-avatar"><img src="img/pessoa.png" alt="imagem pessoa"></div>
             <div>
               <div class="depoi-name">Juliana Costa</div>
               <div class="depoi-empresa">Studio JC</div>
@@ -421,7 +404,7 @@
           <div class="depoi-stars">★★★★★</div>
           <p class="depoi-text">"As campanhas de tráfego pago gerenciadas pela Estalo trouxeram um ROAS surpreendente. Eles sabem exatamente o que estão fazendo."</p>
           <div class="depoi-author">
-            <div class="depoi-avatar">👤</div>
+            <div class="depoi-avatar"><img src="img/pessoa.png" alt="imagem pessoa"></div>
             <div>
               <div class="depoi-name">Marcos Oliveira</div>
               <div class="depoi-empresa">E-shop Kappa</div>
@@ -489,21 +472,21 @@
 
         <div class="contato-items">
           <div class="contato-item">
-            <div class="contato-item-icon">📱</div>
+            <div class="contato-item-icon"><i class="fa-brands fa-whatsapp"></i></div>
             <div class="contato-item-text">
               <h5>WhatsApp</h5>
               <p>(00) 00000-0000</p>
             </div>
           </div>
           <div class="contato-item">
-            <div class="contato-item-icon">✉️</div>
+            <div class="contato-item-icon"><i class="fa-regular fa-envelope"></i></div>
             <div class="contato-item-text">
               <h5>E-mail</h5>
               <p>contato@estalo.com.br</p>
             </div>
           </div>
           <div class="contato-item">
-            <div class="contato-item-icon">📍</div>
+            <div class="contato-item-icon"><i class="fa-solid fa-location-dot"></i></div>
             <div class="contato-item-text">
               <h5>Localização</h5>
               <p>Brasil & Argentina</p>
@@ -520,28 +503,28 @@
 
         <div class="form-row">
           <div class="form-group">
-            <label>👤 Nome Completo</label>
+            <label><i class="fa-regular fa-user"></i> Nome Completo</label>
             <input type="text" placeholder="Seu nome completo">
           </div>
           <div class="form-group">
-            <label>🏢 Empresa</label>
+            <label><i class="fa-solid fa-building"></i> Empresa</label>
             <input type="text" placeholder="Nome da sua empresa">
           </div>
         </div>
 
         <div class="form-row">
           <div class="form-group">
-            <label>✉️ E-mail</label>
+            <label><i class="fa-regular fa-envelope"></i> E-mail</label>
             <input type="email" placeholder="seu@email.com">
           </div>
           <div class="form-group">
-            <label>📱 Telefone</label>
+            <label><i class="fa-solid fa-mobile-screen-button"></i> Telefone</label>
             <input type="tel" placeholder="(00) 00000-0000">
           </div>
         </div>
 
         <div class="form-group">
-          <label>🏷️ Serviço Desejado</label>
+          <label><i class="fa-solid fa-list-check"></i> Serviço Desejado</label>
           <select>
             <option value="" disabled selected>Selecione um serviço...</option>
             <option>Planejamento Estratégico</option>
@@ -555,19 +538,19 @@
         </div>
 
         <div class="form-group">
-          <label>💬 Mensagem</label>
+          <label><i class="fa-regular fa-comment-dots"></i> Mensagem</label>
           <textarea placeholder="Descreva seu projeto ou necessidade. Como podemos ajudar?"></textarea>
         </div>
 
         <button class="form-submit" onclick="submitForm()">
-          Quero Crescer com a Estalo ✈️
+          Quero Crescer com a Estalo <i class="fa-solid fa-paper-plane" style="margin-left: 8px;"></i>
         </button>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
+<!--RODA PE-->
 <footer>
   <div class="footer-inner">
     <div class="footer-top">
@@ -575,10 +558,10 @@
         <span class="nav-logo">Estalo<span>.</span></span>
         <p>Agência de marketing e estratégia para empresas que querem crescer de forma inteligente, consistente e com resultados reais.</p>
         <div class="social-links">
-          <a href="#" class="social-link" aria-label="Instagram">📷</a>
-          <a href="#" class="social-link" aria-label="LinkedIn">💼</a>
-          <a href="#" class="social-link" aria-label="WhatsApp">💬</a>
-          <a href="#" class="social-link" aria-label="Facebook">📘</a>
+          <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" class="social-link" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
         </div>
       </div>
 
@@ -609,8 +592,8 @@
       <div class="footer-col">
         <h5>Contato</h5>
         <ul>
-          <li><a href="#">contato@estalo.com.br</a></li>
-          <li><a href="#">(00) 00000-0000</a></li>
+          <li><a href="mailto:contato@estalo.com.br">contato@estalo.com.br</a></li>
+          <li><a href="tel:00000000000">(00) 00000-0000</a></li>
           <li><a href="#">Brasil & Argentina</a></li>
         </ul>
       </div>
@@ -618,7 +601,7 @@
 
     <div class="footer-bottom">
       <p class="footer-copy">© 2025 <span>Estalo</span>. Todos os direitos reservados.</p>
-      <p class="footer-copy" style="font-size:0.75rem;">Feito com 💛 para fazer seu negócio crescer.</p>
+      <p class="footer-copy" style="font-size:0.75rem;">Feito com <i class="fa-solid fa-heart" style="color: #f0a800;"></i> para fazer seu negócio crescer.</p>
     </div>
   </div>
 </footer>
