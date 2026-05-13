@@ -41,6 +41,7 @@ body {
   color: var(--navy);
   overflow-x: hidden;
   line-height: 1.6;
+   font-style: normal
 }
 
 /* ═══════════════════════════════════════════
@@ -54,6 +55,7 @@ h4,
 h5 {
   font-family: "Montserrat", sans-serif;
   line-height: 1.15;
+   font-style: normal
 }
 
 a {
@@ -449,195 +451,223 @@ section {
 
 #sobre {
   background: var(--light);
+  padding: 100px 0;
 }
 
-.sobre-grid {
+/* Tipografia Estilo Hero */
+.hero-title {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 900;
+  color: var(--navy);
+  line-height: 1;
+  letter-spacing: -2px;
+}
+
+.accent-outline {
+ color: var(--gold);
+}
+
+/* Grid Layout */
+.sobre-grid-modern {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
-  align-items: start;
-  margin-bottom: 80px;
+  margin: 60px 0 100px;
+  height: 500px;
+  max-width: 1200px;
+}
+.sobre-text-box .img-eq img{
+  margin-top: 20px;
+  height: 180px;
+  width: 560px;
+}
+.lead-text {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 25px;
+  text-align: justify;
 }
 
-.sobre-text p {
-  font-size: 1rem;
-  line-height: 1.85;
-  color: var(--dark);
-  margin-bottom: 18px;
+.sobre-text-box p{
+  text-align: justify;
 }
 
-/* Cards Missão/Visão/Propósito */
-.mvp-card {
-  background: var(--white);
-  border-radius: var(--radius-md);
-  padding: 28px 24px;
-  border-top: 4px solid var(--gold);
-  box-shadow: var(--shadow-sm);
-  transition:
-    transform var(--transition),
-    box-shadow var(--transition);
+
+/* MVP Cards */
+.mvp-card-modern {
+  background: #fff;
+  padding: 35px;
+  border-radius: 28px;
+  border: 1px solid rgba(0,0,0,0.05);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.mvp-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-md);
+.mvp-card-modern:hover {
+  transform: translateY(-8px);
+  border-color: var(--gold);
 }
 
-.mvp-card h4 {
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+.mvp-number {
   color: var(--gold);
-  margin-bottom: 10px;
-}
-
-.mvp-card p {
-  font-size: 0.92rem;
-  line-height: 1.65;
-  color: var(--dark);
-}
-
-/* Diferenciais */
-.diffs-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-  margin-top: 40px;
-}
-
-.diff-item {
-  display: flex;
-  gap: 14px;
-  align-items: flex-start;
-  padding: 20px;
-  background: var(--white);
-  border-radius: var(--radius-sm);
-  box-shadow: var(--shadow-sm);
-  transition: box-shadow var(--transition);
-}
-
-.diff-item:hover {
-  box-shadow: var(--shadow-md);
-}
-
-.diff-icon {
-  font-size: 1.2rem;
-  flex-shrink: 0;
-  margin-top: 2px;
-}
-
-.diff-item h5 {
-  font-size: 0.88rem;
-  font-weight: 700;
-  margin-bottom: 5px;
-  color: var(--navy);
-}
-
-.diff-item p {
-  font-size: 0.82rem;
-  color: var(--dark);
-  line-height: 1.5;
-}
-
-/* Fundadores */
-.fundadores-title {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.35rem;
   font-weight: 800;
-  color: var(--navy);
-  margin-bottom: 36px;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Diferenciais e Ícones */
+
+.diff-section{
   text-align: center;
 }
-
-.fundadores-title span {
-  color: var(--gold);
-}
-
-.fundadores-grid {
+.diffs-grid-modern {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 36px;
-  max-width: 800px;
-  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
 }
 
-.fundador-card {
-  background: var(--navy);
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: var(--shadow-lg);
-  transition: transform 0.3s;
+.diff-card-new {
+  background: #fff;
+  padding: 40px;
+  border-radius: 24px;
+  text-align: left;
 }
 
-.fundador-card:hover {
-  transform: translateY(-6px);
-}
-
-.fundador-photo {
-  width: 100%;
-  height: 240px;
-  background: linear-gradient(135deg, var(--navy-light) 0%, var(--dark) 100%);
+.diff-icon-container {
+  width: 60px;
+  height: 60px;
+  background: rgba(240, 168, 0, 0.1);
+  color: var(--gold);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 4.5rem;
-  color: rgba(240, 168, 0, 0.3);
-  position: relative;
+  font-size: 2rem;
+  border-radius: 16px;
+  margin-bottom: 25px;
+}
+
+/* Fundadores - Design de Galeria */
+.fundadores-title{
+  margin-top: 100px;
+  text-align: center;
+}
+.fundadores-grid-modern {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.fundador-card-new {
+  background: #fff;
+  border-radius: 32px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(0,0,0,0.05);
 }
 
-.fundador-photo::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 60px;
-  background: linear-gradient(transparent, var(--navy));
+.fundador-image-box {
+  width: 100%;
+  height: 380px;
+  overflow: hidden;
+  background: #eee;
 }
 
-.fundador-info {
-  padding: 24px;
+.fundador-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Faz a foto preencher o espaço sem distorcer */
+  transition: transform 0.5s ease;
 }
 
-.fundador-info h3 {
-  font-size: 1.15rem;
-  font-weight: 800;
-  color: var(--white);
-  margin-bottom: 4px;
+.fundador-card-new:hover .fundador-img {
+  transform: scale(1.05);
+}
+
+.fundador-info-new {
+  padding: 35px;
 }
 
 .fundador-cargo {
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 2px;
+  font-size: 0.75rem;
+  font-weight: 700;
   text-transform: uppercase;
   color: var(--gold);
-  margin-bottom: 14px;
+  letter-spacing: 2px;
 }
 
-.fundador-bio {
-  font-size: 0.86rem;
-  color: rgba(255, 255, 255, 0.6);
-  line-height: 1.65;
+.fundador-info-new h3 {
+  margin: 10px 0;
+  font-size: 1.6rem;
+  color: var(--navy);
+}
+/* Estilo da Bio Extra (Escondida por padrão) */
+.fundador-bio-extra {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
 }
 
-.fundador-especialidade {
+.fundador-bio-extra.active {
+  max-height: 300px; /* Ajuste conforme o tamanho do texto */
+  opacity: 1;
+  margin: 15px 0;
+  padding-top: 15px;
+  border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+.fundador-bio-extra p {
+  font-size: 0.9rem;
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+/* Rodapé do Card e Botão */
+.fundador-footer {
   display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  margin-top: 14px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
 }
 
-.tag-esp {
-  font-size: 0.7rem;
-  font-weight: 600;
-  background: rgba(240, 168, 0, 0.15);
+.btn-saiba-mais {
+  background: transparent;
+  border: none;
+  color: var(--navy);
+  font-weight: 700;
+  font-size: 0.85rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.3s;
+}
+
+.btn-saiba-mais i {
+  transition: transform 0.3s;
+}
+
+.btn-saiba-mais:hover {
   color: var(--gold);
-  border: 1px solid rgba(240, 168, 0, 0.25);
-  border-radius: 4px;
-  padding: 4px 9px;
+}
+
+/* Rotação do ícone quando ativo */
+.btn-saiba-mais.active i {
+  transform: rotate(180deg);
+}
+
+/* Ajuste Mobile */
+@media (max-width: 992px) {
+  .sobre-grid-modern, .fundadores-grid-modern {
+    grid-template-columns: 1fr;
+  }
+  
+  .fundador-image-box {
+    height: 300px;
+  }
 }
 
 /* ═══════════════════════════════════════════
