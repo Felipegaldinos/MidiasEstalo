@@ -1,0 +1,878 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InsightBlog — Marketing & Conteúdo Digital</title>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,400&family=Karla:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="../css/blog.css">
+  </head>
+  <body>
+    <!-- ════ HERO ════ -->
+   <section class="hero">
+  <div class="hero-search"> 
+    <select id="assunto">
+      <option value="">Selecione</option>
+      <option value="marketing">Marketing Digital</option>
+      <option value="seo">SEO</option>
+      <option value="growth">Growth Hacking</option>
+      <option value="inbound">Inbound Marketing</option>
+      <option value="redes">Redes Sociais</option>
+    </select>
+    <input 
+      type="text" 
+      id="pesquisa" 
+      placeholder="O que você está procurando?"
+    />
+    <button id="btnPesquisar">
+      Pesquisar →
+    </button>
+  </div>
+  <div class="hero-tags">
+    <a href="#">CRM</a>
+    <a href="#">Growth</a>
+    <a href="#">SEO Técnico</a>
+    <a href="#">Inbound</a>
+    <a href="#">Google Ads</a>
+    <a href="#">Email Marketing</a>
+  </div>
+</section>
+    <!-- ════ HERO CARDS (top 3) ════ -->
+    <section class="hero-cards-section" style="padding-top: 48px">
+      <div class="wrap">
+        <div class="hero-cards">
+          <div class="hero-card fade-in">
+            <img
+              src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600&q=80"
+              alt=""
+            />
+            <div class="hero-card-overlay">
+              <span class="tag">Viagem</span>
+              <p class="card-title">Praesent placerat quereros.</p>
+              <span class="card-meta"
+                >porStan Istrigo &nbsp;|&nbsp; 3 dias atrás</span
+              >
+            </div>
+          </div>
+          <div class="hero-card fade-in">
+            <img
+              src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80"
+              alt=""
+            />
+            <div class="hero-card-overlay">
+              <span class="tag dark">Viagem</span>
+              <p class="card-title">
+                Quisque volutpat mattis eros felia facilisis.
+              </p>
+              <span class="card-meta"
+                >porStan Istrigo &nbsp;|&nbsp; 3 dias atrás</span
+              >
+            </div>
+          </div>
+          <div class="hero-card fade-in">
+            <img
+              src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&q=80"
+              alt=""
+            />
+            <div class="hero-card-overlay">
+              <span
+                class="tag"
+                style="background: var(--charcoal); color: var(--gold)"
+                >Comida</span
+              >
+              <p class="card-title">Vestibulum auctor dapibus.</p>
+              <span class="card-meta"
+                >porStan Istrigo &nbsp;|&nbsp; 3 dias atrás</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════ CONTEÚDOS EM DESTAQUE ════ -->
+    <section class="featured-section">
+      <div class="wrap">
+        <h2 class="section-title">Conteúdos em destaque</h2>
+        <div class="title-line"></div>
+        <div class="featured-grid">
+          <!-- big card -->
+          <div class="feat-big fade-in">
+            <img
+              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80"
+              alt="CRM"
+            />
+            <div class="card-body">
+              <span class="tag">CRM</span>
+              <p class="card-title">
+                CRM: O que é, seus benefícios e os 7 melhores do Brasil
+              </p>
+              <span class="card-meta">27 Nov, 2024</span>
+              <br />
+              <a href="#" class="read-more">Saiba mais →</a>
+            </div>
+          </div>
+          <!-- small cards -->
+          <div class="feat-small fade-in">
+            <img
+              src="https://images.unsplash.com/photo-1611095564985-3d0cf7dc5f63?w=300&q=80"
+              alt="Growth"
+            />
+            <div class="card-body">
+              <span class="tag dark">Growth</span>
+              <p class="card-title">
+                Growth Marketing: O que é e como implementar na sua empresa
+              </p>
+              <span class="card-meta">27 Nov, 2024</span>
+              <a href="#" class="read-more">Saiba mais →</a>
+            </div>
+          </div>
+          <div class="feat-small fade-in">
+            <img
+              src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=300&q=80"
+              alt="Inbound"
+            />
+            <div class="card-body">
+              <span class="tag">Inbound</span>
+              <p class="card-title">
+                Inbound Marketing: Como fazer essa estratégia em 2026?
+              </p>
+              <span class="card-meta">18 Nov, 2024</span>
+              <a href="#" class="read-more">Saiba mais →</a>
+            </div>
+          </div>
+          <div class="feat-small fade-in">
+            <img
+              src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=300&q=80"
+              alt="SEO"
+            />
+            <div class="card-body">
+              <span class="tag outline">SEO</span>
+              <p class="card-title">
+                O que é SEO Técnico e por que analisar se o seu site está
+                saudável?
+              </p>
+              <span class="card-meta">27 Nov, 2024</span>
+              <a href="#" class="read-more">Saiba mais →</a>
+            </div>
+          </div>
+          <div class="feat-small fade-in">
+            <img
+              src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=300&q=80"
+              alt="Google"
+            />
+            <div class="card-body">
+              <span class="tag">Google</span>
+              <p class="card-title">
+                Entenda como funciona o ranqueamento no Google
+              </p>
+              <span class="card-meta">27 Nov, 2024</span>
+              <a href="#" class="read-more">Saiba mais →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════ NOTÍCIAS RECENTES ════ -->
+    <section class="recent-section">
+      <div class="wrap">
+        <h2 class="section-title">Notícias recentes</h2>
+        <div class="title-line"></div>
+        <div class="recent-grid" id="recentGrid">
+          <div class="news-card fade-in">
+            <img
+              src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&q=80"
+              alt=""
+            />
+            <div class="card-body">
+              <span class="tag">Estilo de vida</span>
+              <p class="card-title">Praesent scelerisque quereros.</p>
+              <span class="card-meta"
+                >porStan Istrigo &nbsp;|&nbsp; 4 dias atrás</span
+              >
+            </div>
+          </div>
+          <div class="news-card fade-in">
+            <img
+              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&q=80"
+              alt=""
+            />
+            <div class="card-body">
+              <span class="tag dark">Tecnologia</span>
+              <p class="card-title">Vestibulo auctor dapibus neque.</p>
+              <span class="card-meta"
+                >porStan Istrigo &nbsp;|&nbsp; 4 dias atrás</span
+              >
+            </div>
+          </div>
+          <div class="news-card fade-in">
+            <img
+              src="https://images.unsplash.com/photo-1530549387789-4c1017266635?w=400&q=80"
+              alt=""
+            />
+            <div class="card-body">
+              <span class="tag">Esporte</span>
+              <p class="card-title">Praesent tincidunt risus quiseros.</p>
+              <span class="card-meta"
+                >porStan Istrigo &nbsp;|&nbsp; 4 dias atrás</span
+              >
+            </div>
+          </div>
+          <div class="news-card fade-in">
+            <img
+              src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=400&q=80"
+              alt=""
+            />
+            <div class="card-body">
+              <span
+                class="tag"
+                style="background: var(--charcoal); color: var(--gold)"
+                >Comida</span
+              >
+              <p class="card-title">Aliquam tincidunt mauris eu risus.</p>
+              <span class="card-meta"
+                >porStan Istrigo &nbsp;|&nbsp; 4 dias atrás</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════ POSTS EM ALTA ════ -->
+    <section class="hot-section">
+      <div class="wrap">
+        <h2 class="section-title">Posts em alta</h2>
+        <div class="title-line"></div>
+        <div class="hot-grid">
+          <!-- big featured -->
+          <div class="hot-big fade-in">
+            <img
+              src="https://images.unsplash.com/photo-1501706362039-c06b2d715385?w=800&q=80"
+              alt=""
+            />
+            <div class="hot-big-overlay">
+              <span class="tag">Estilo de vida</span>
+              <p class="card-title">
+                Integer vitae libero ac risus egestas placerat.
+              </p>
+              <span class="card-meta"
+                >porStan Istrigo &nbsp;|&nbsp; 3 comentários &nbsp;|&nbsp; 2
+                dias atrás</span
+              >
+              <p>
+                Praesent dapibus, neque id cursus faucibus, tortor neque egestas
+                augue, euvolutpate magna eros eu erat.
+              </p>
+            </div>
+          </div>
+          <!-- tab list -->
+          <div>
+            <div class="tabs">
+              <button class="tab-btn active" data-tab="hoje">Hoje</button>
+              <button class="tab-btn" data-tab="semana">Estilo de vida</button>
+              <button class="tab-btn" data-tab="mes">Comida</button>
+              <button class="tab-btn" data-tab="viagem">Viagem</button>
+            </div>
+            <div class="tab-content active" id="tab-hoje">
+              <div class="hot-item">
+                <img
+                  src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=200&q=80"
+                  alt=""
+                />
+                <div>
+                  <span class="tag" style="font-size: 0.65rem">Comida</span>
+                  <p class="card-title">Fusce pellentesque suscipit.</p>
+                  <span class="card-meta"
+                    >2 dias atrás &nbsp;|&nbsp; 0 comentários</span
+                  >
+                </div>
+              </div>
+              <div class="hot-item">
+                <img
+                  src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=200&q=80"
+                  alt=""
+                />
+                <div>
+                  <span class="tag dark" style="font-size: 0.65rem"
+                    >Viagem</span
+                  >
+                  <p class="card-title">
+                    Integer vitae libero ac risus egestas placerat.
+                  </p>
+                  <span class="card-meta"
+                    >2 dias atrás &nbsp;|&nbsp; 2 comentários</span
+                  >
+                </div>
+              </div>
+              <div class="hot-item">
+                <img
+                  src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=200&q=80"
+                  alt=""
+                />
+                <div>
+                  <span class="tag outline" style="font-size: 0.65rem"
+                    >Estilo de vida</span
+                  >
+                  <p class="card-title">Vestibulo commodo felisquis tortor.</p>
+                  <span class="card-meta"
+                    >2 dias atrás &nbsp;|&nbsp; 5 comentários</span
+                  >
+                </div>
+              </div>
+              <div class="hot-item">
+                <img
+                  src="https://images.unsplash.com/photo-1530549387789-4c1017266635?w=200&q=80"
+                  alt=""
+                />
+                <div>
+                  <span
+                    class="tag"
+                    style="
+                      font-size: 0.65rem;
+                      background: var(--charcoal);
+                      color: var(--gold);
+                    "
+                    >Esporte</span
+                  >
+                  <p class="card-title">Quisque a lectus.</p>
+                  <span class="card-meta"
+                    >4 dias atrás &nbsp;|&nbsp; 3 comentários</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="tab-content" id="tab-semana">
+              <div class="hot-item">
+                <img
+                  src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=200&q=80"
+                  alt=""
+                />
+                <div>
+                  <span class="tag" style="font-size: 0.65rem"
+                    >Estilo de vida</span
+                  >
+                  <p class="card-title">
+                    Morbi tincidunt augue interdum velit euismod in.
+                  </p>
+                  <span class="card-meta"
+                    >5 dias atrás &nbsp;|&nbsp; 4 comentários</span
+                  >
+                </div>
+              </div>
+              <div class="hot-item">
+                <img
+                  src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=200&q=80"
+                  alt=""
+                />
+                <div>
+                  <span class="tag dark" style="font-size: 0.65rem"
+                    >Fitness</span
+                  >
+                  <p class="card-title">
+                    Phasellus ultrices nulla malesuada lectus.
+                  </p>
+                  <span class="card-meta"
+                    >6 dias atrás &nbsp;|&nbsp; 1 comentário</span
+                  >
+                </div>
+              </div>
+              <div class="hot-item">
+                <img
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80"
+                  alt=""
+                />
+                <div>
+                  <span class="tag outline" style="font-size: 0.65rem"
+                    >Pessoas</span
+                  >
+                  <p class="card-title">
+                    Viverra nam libero justo laoreet sit amet.
+                  </p>
+                  <span class="card-meta"
+                    >1 semana &nbsp;|&nbsp; 7 comentários</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="tab-content" id="tab-mes">
+              <div class="hot-item">
+                <img
+                  src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=200&q=80"
+                  alt=""
+                />
+                <div>
+                  <span
+                    class="tag"
+                    style="
+                      font-size: 0.65rem;
+                      background: var(--charcoal);
+                      color: var(--gold);
+                    "
+                    >Comida</span
+                  >
+                  <p class="card-title">
+                    Os melhores restaurantes veganos do Brasil.
+                  </p>
+                  <span class="card-meta"
+                    >3 dias atrás &nbsp;|&nbsp; 11 comentários</span
+                  >
+                </div>
+              </div>
+              <div class="hot-item">
+                <img
+                  src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=200&q=80"
+                  alt=""
+                />
+                <div>
+                  <span
+                    class="tag"
+                    style="
+                      font-size: 0.65rem;
+                      background: var(--charcoal);
+                      color: var(--gold);
+                    "
+                    >Comida</span
+                  >
+                  <p class="card-title">
+                    Receitas rápidas para o dia a dia saudável.
+                  </p>
+                  <span class="card-meta"
+                    >5 dias atrás &nbsp;|&nbsp; 6 comentários</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="tab-content" id="tab-viagem">
+              <div class="hot-item">
+                <img
+                  src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=200&q=80"
+                  alt=""
+                />
+                <div>
+                  <span class="tag dark" style="font-size: 0.65rem"
+                    >Viagem</span
+                  >
+                  <p class="card-title">
+                    Destinos imperdíveis para 2026 na América do Sul.
+                  </p>
+                  <span class="card-meta"
+                    >2 dias atrás &nbsp;|&nbsp; 9 comentários</span
+                  >
+                </div>
+              </div>
+              <div class="hot-item">
+                <img
+                  src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=200&q=80"
+                  alt=""
+                />
+                <div>
+                  <span class="tag dark" style="font-size: 0.65rem"
+                    >Viagem</span
+                  >
+                  <p class="card-title">
+                    Como planejar uma viagem sem gastar muito.
+                  </p>
+                  <span class="card-meta"
+                    >4 dias atrás &nbsp;|&nbsp; 3 comentários</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════ ÚLTIMAS PUBLICAÇÕES ════ -->
+    <section class="latest-section">
+      <div class="wrap">
+        <div class="latest-layout">
+          <div>
+            <h2 class="section-title">Últimas publicações</h2>
+            <div class="title-line"></div>
+            <div class="latest-grid" id="postsGrid">
+              <!-- 8 initial posts -->
+              <div class="pub-card fade-in">
+                <img
+                  src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=500&q=80"
+                  alt=""
+                />
+                <div class="card-body">
+                  <span
+                    class="tag"
+                    style="background: var(--charcoal); color: var(--gold)"
+                    >Comida</span
+                  >
+                  <p class="card-title">Nullam malesuada erat turpis.</p>
+                  <p
+                    style="
+                      font-size: 0.82rem;
+                      color: #888;
+                      margin-top: 6px;
+                      line-height: 1.5;
+                    "
+                  >
+                    Praesent dapibus, neque id cursus faucibus, tortor neque
+                    egestas augue...
+                  </p>
+                  <span
+                    class="card-meta"
+                    style="display: block; margin-top: 8px"
+                    >5 dias atrás &nbsp;|&nbsp; 5 comentários &nbsp;|&nbsp; por
+                    Julia Berlls</span
+                  >
+                </div>
+              </div>
+              <div class="pub-card fade-in">
+                <img
+                  src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=500&q=80"
+                  alt=""
+                />
+                <div class="card-body">
+                  <span class="tag dark">Viagem</span>
+                  <p class="card-title">
+                    Morbi in sem quisdui placerat ornare.
+                  </p>
+                  <p
+                    style="
+                      font-size: 0.82rem;
+                      color: #888;
+                      margin-top: 6px;
+                      line-height: 1.5;
+                    "
+                  >
+                    Praesent dapibus, neque id cursus faucibus, tortor neque
+                    egestas...
+                  </p>
+                  <span
+                    class="card-meta"
+                    style="display: block; margin-top: 8px"
+                    >2 dias atrás &nbsp;|&nbsp; 9 comentários &nbsp;|&nbsp; por
+                    Julia Berlls</span
+                  >
+                </div>
+              </div>
+              <div class="pub-card fade-in">
+                <img
+                  src="https://images.unsplash.com/photo-1434648957308-5e6a859697e8?w=500&q=80"
+                  alt=""
+                />
+                <div class="card-body">
+                  <span class="tag">Estilo</span>
+                  <p class="card-title">
+                    Morbi in sem quisdui placerat ornare.
+                  </p>
+                  <p
+                    style="
+                      font-size: 0.82rem;
+                      color: #888;
+                      margin-top: 6px;
+                      line-height: 1.5;
+                    "
+                  >
+                    Praesent dapibus, neque id cursus faucibus, tortor neque
+                    egestas...
+                  </p>
+                  <span
+                    class="card-meta"
+                    style="display: block; margin-top: 8px"
+                    >2 dias atrás &nbsp;|&nbsp; 9 comentários &nbsp;|&nbsp; por
+                    Julia Berlls</span
+                  >
+                </div>
+              </div>
+              <div class="pub-card fade-in">
+                <img
+                  src="https://images.unsplash.com/photo-1543349689-9a4d426bee8e?w=500&q=80"
+                  alt=""
+                />
+                <div class="card-body">
+                  <span class="tag dark">Viagem</span>
+                  <p class="card-title">Ias iaculis ultrices nulla.</p>
+                  <p
+                    style="
+                      font-size: 0.82rem;
+                      color: #888;
+                      margin-top: 6px;
+                      line-height: 1.5;
+                    "
+                  >
+                    Praesent dapibus, neque id cursus faucibus, tortor neque
+                    egestas...
+                  </p>
+                  <span
+                    class="card-meta"
+                    style="display: block; margin-top: 8px"
+                    >6 dias atrás &nbsp;|&nbsp; 3 comentários &nbsp;|&nbsp; por
+                    Julia Berlls</span
+                  >
+                </div>
+              </div>
+              <div class="pub-card fade-in">
+                <img
+                  src="https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=500&q=80"
+                  alt=""
+                />
+                <div class="card-body">
+                  <span
+                    class="tag"
+                    style="background: var(--charcoal); color: var(--gold)"
+                    >Comida</span
+                  >
+                  <p class="card-title">Cras iaculis ultrices nulla.</p>
+                  <p
+                    style="
+                      font-size: 0.82rem;
+                      color: #888;
+                      margin-top: 6px;
+                      line-height: 1.5;
+                    "
+                  >
+                    Praesent dapibus, neque id cursus faucibus, tortor neque
+                    egestas...
+                  </p>
+                  <span
+                    class="card-meta"
+                    style="display: block; margin-top: 8px"
+                    >4 dias atrás &nbsp;|&nbsp; 2 comentários &nbsp;|&nbsp; por
+                    Julia Berlls</span
+                  >
+                </div>
+              </div>
+              <div class="pub-card fade-in">
+                <img
+                  src="https://images.unsplash.com/photo-1490750967868-88df5691cc35?w=500&q=80"
+                  alt=""
+                />
+                <div class="card-body">
+                  <span class="tag">Natureza</span>
+                  <p class="card-title">Aliquam erat volutpat vestibulum.</p>
+                  <p
+                    style="
+                      font-size: 0.82rem;
+                      color: #888;
+                      margin-top: 6px;
+                      line-height: 1.5;
+                    "
+                  >
+                    Praesent dapibus, neque id cursus faucibus, tortor neque
+                    egestas...
+                  </p>
+                  <span
+                    class="card-meta"
+                    style="display: block; margin-top: 8px"
+                    >3 dias atrás &nbsp;|&nbsp; 7 comentários &nbsp;|&nbsp; por
+                    Julia Berlls</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="load-more-wrap">
+              <button class="btn-load" id="loadMoreBtn">
+                Carregar mais artigos
+              </button>
+            </div>
+          </div>
+
+          <!-- ─── SIDEBAR ─── -->
+          <aside class="sidebar">
+            <!-- Social -->
+            <div class="sidebar-block">
+              <div class="sidebar-title">Social</div>
+              <div class="social-links">
+                <a href="#" class="social-btn fb">
+                  <svg
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                    />
+                  </svg>
+                  <span class="social-count">10,3k</span>
+                  <span>Curtidas</span>
+                </a>
+                <a href="#" class="social-btn tw">
+                  <svg
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                    />
+                  </svg>
+                  <span class="social-count">5,7k</span>
+                  <span>Seguidores</span>
+                </a>
+                <a href="#" class="social-btn ig">
+                  <svg
+                    width="16"
+                    height="16"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                  </svg>
+                  <span class="social-count">8,1k</span>
+                  <span>Seguidores</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Últimas notícias -->
+            <div class="sidebar-block">
+              <div class="sidebar-title">Últimas notícias</div>
+              <div class="mini-post">
+                <img
+                  src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=150&q=80"
+                  alt=""
+                />
+                <div class="mini-post-text">
+                  <span
+                    class="tag"
+                    style="
+                      background: var(--charcoal);
+                      color: var(--gold);
+                      font-size: 0.6rem;
+                    "
+                    >Comida</span
+                  >
+                  <h4>Fusce pellentesque suscipit.</h4>
+                  <span>7 dias atrás &nbsp;|&nbsp; 8 comentários</span>
+                </div>
+              </div>
+              <div class="mini-post">
+                <img
+                  src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=150&q=80"
+                  alt=""
+                />
+                <div class="mini-post-text">
+                  <span class="tag dark" style="font-size: 0.6rem">Viagem</span>
+                  <h4>Integer vitae libero ac risus egestas placerat.</h4>
+                  <span>2 dias atrás &nbsp;|&nbsp; 2 comentários</span>
+                </div>
+              </div>
+              <div class="mini-post">
+                <img
+                  src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=150&q=80"
+                  alt=""
+                />
+                <div class="mini-post-text">
+                  <span class="tag" style="font-size: 0.6rem"
+                    >Estilo de vida</span
+                  >
+                  <h4>Vestibulo commodo felisquis tortor.</h4>
+                  <span>2 dias atrás &nbsp;|&nbsp; 5 comentários</span>
+                </div>
+              </div>
+              <div class="mini-post">
+                <img
+                  src="https://images.unsplash.com/photo-1530549387789-4c1017266635?w=150&q=80"
+                  alt=""
+                />
+                <div class="mini-post-text">
+                  <span class="tag outline" style="font-size: 0.6rem"
+                    >Esporte</span
+                  >
+                  <h4>Quisque a lectus.</h4>
+                  <span>4 dias atrás &nbsp;|&nbsp; 3 comentários</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Categorias -->
+            <div class="sidebar-block">
+              <div class="sidebar-title">Categorias</div>
+              <ul class="categories-list">
+                <li>Marketing Digital <span class="cat-count">24</span></li>
+                <li>SEO <span class="cat-count">18</span></li>
+                <li>Growth Hacking <span class="cat-count">12</span></li>
+                <li>Inbound Marketing <span class="cat-count">9</span></li>
+                <li>Redes Sociais <span class="cat-count">31</span></li>
+                <li>Tecnologia <span class="cat-count">15</span></li>
+                <li>Negócios <span class="cat-count">20</span></li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════ INSTAGRAM ════ -->
+    <section class="instagram-section">
+      <div class="wrap">
+        <h2
+          class="section-title"
+          style="text-align: center; margin-bottom: 4px"
+        >
+          Nossas últimas publicações no Instagram
+        </h2>
+        <p class="insta-handle"><strong>@insightblog</strong></p>
+        <div class="title-line" style="margin: 0 auto 24px"></div>
+        <div class="insta-grid">
+          <div class="insta-item">
+            <img
+              src="https://images.unsplash.com/photo-1444210971048-1f09edde0bf2?w=300&q=80"
+              alt=""
+            />
+          </div>
+          <div class="insta-item">
+            <img
+              src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=300&q=80"
+              alt=""
+            />
+          </div>
+          <div class="insta-item">
+            <img
+              src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?w=300&q=80"
+              alt=""
+            />
+          </div>
+          <div class="insta-item">
+            <img
+              src="https://images.unsplash.com/photo-1554151228-14d9def656e4?w=300&q=80"
+              alt=""
+            />
+          </div>
+          <div class="insta-item">
+            <img
+              src="https://images.unsplash.com/photo-1524522173746-f628baad3644?w=300&q=80"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="insta-follow">
+          <button class="btn-follow">
+            <svg
+              width="16"
+              height="16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+            </svg>
+            Seguir no Instagram
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- TOAST -->
+    <div class="toast" id="toast">✓ Mais artigos carregados!</div>
+
+   <script src="../js/blog.js">js</script>
+   <script src="../js/pesquisa.js">js</script>
+  </body>
+</html>
