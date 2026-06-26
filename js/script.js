@@ -20,23 +20,45 @@
   });
 
   // Mobile menu
-  function toggleMenu() {
-    const menu = document.getElementById('mobile-menu');
-    menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
-  }
+ function toggleMenu() {
+  const navLinks = document.getElementById('nav-menu');
+  const hamburgerBtn = document.getElementById('hamburger-btn');
+  
+  navLinks.classList.toggle('active');
+  hamburgerBtn.classList.toggle('active');
+}
 
-  // Form submit
-  function submitForm() {
-    const btn = document.querySelector('.form-submit');
-    btn.textContent = '✅ Mensagem enviada! Em breve entraremos em contato.';
-    btn.style.background = '#22c55e';
-    btn.style.color = 'white';
-    setTimeout(() => {
-      btn.textContent = 'Quero Crescer com a Estalo ✈️';
-      btn.style.background = 'var(--gold)';
-      btn.style.color = 'var(--navy)';
-    }, 4000);
-  }
+// Automação dos Cliques dos Submenus no Mobile
+document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+  toggle.addEventListener('click', function(e) {
+    // Aplica o comportamento apenas se estiver em telas mobile/tablet
+    if (window.innerWidth <= 992) {
+      e.preventDefault(); // Impede o redirecionamento imediato da tag <a>
+      
+      const parentLi = this.parentElement;
+      
+      // Fecha outros submenus que possam estar abertos
+      document.querySelectorAll('.dropdown').forEach(li => {
+        if (li !== parentLi) li.classList.remove('open');
+      });
+      
+      // Abre ou fecha o submenu atual
+      parentLi.classList.toggle('open');
+    }
+  });
+});
+
+// Fecha o menu principal se o usuário clicar em um link direto (tipo "Cases") ou nos links internos
+document.querySelectorAll('.mobile-direct-link, .mega-column a, .nav-cta').forEach(link => {
+  link.addEventListener('click', () => {
+    if (window.innerWidth <= 992) {
+      toggleMenu();
+      // Remove abas que ficaram abertas para a próxima vez
+      document.querySelectorAll('.dropdown').forEach(li => li.classList.remove('open'));
+    }
+  });
+});
+
 //carrossel depoimentos
   const track = document.getElementById('depoiTrack');
 const slides = document.querySelectorAll('.depoi-slide');

@@ -10,33 +10,83 @@
 <link rel="stylesheet" href="../css/sobre.css">
 <body>
 <!-- NAV -->
-<nav>
-  <a class="nav-logo" href="#home">Estalo<span>.</span></a>
-  <ul class="nav-links">
-    <li></li>
-    <li><a href="#sobre">Sobre</a></li>
-    <li><a href="#servicos">Serviços</a></li>
-    <li><a href="#cases">Cases</a></li>
-    <li><a href="#porque">Por Que Nós</a></li>
-    <li><a href="../index.html#contato">Contato</a></li>
-    <li> <a class="nav-cta" href="../index.html#contato">Solicitar Proposta</a></li>
-  </ul>
-  <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Menu">
-    <span></span><span></span><span></span>
-  </button>
-</nav>
+<header class="main-header">
+  <nav class="nav-container">
+    
+    <a class="nav-logo" href="#home"><img src="../img/estalolg.png" alt="Estalo"></a>
+    
+    <ul class="nav-links" id="nav-menu">
+      <li class="dropdown">
+        <a href="#sobre" class="dropdown-toggle">Estalo <span class="arrow">▾</span></a>
+        <div class="mega-menu">
+          <div class="mega-column">
+            <h4>Quem Somos</h4>
+            <p>Nossa história, propósito e o que nos move todos os dias.</p>
+            <a href="peges/sobre.html">Conhecer a Estalo →</a>
+          </div>
+          <div class="mega-column">
+            <h4>Por que nos escolher</h4>
+            <p>Nossa metodologia e os diferenciais que geram resultados reais.</p>
+            <a href="#porque">Nossos Diferenciais →</a>
+          </div>
+          <div class="mega-column">
+            <h4>Blog</h4>
+            <p>Artigos, insights e novidades sobre o mercado digital.</p>
+            <a href="peges/blog.html">Ler o Blog →</a>
+          </div>
+        </div>
+      </li>
 
-<!-- MOBILE MENU -->
-<div id="mobile-menu" style="display:none;position:fixed;top:72px;left:0;right:0;background:var(--navy);z-index:999;padding:24px;border-bottom:2px solid var(--gold);">
-  <ul style="list-style:none;display:flex;flex-direction:column;gap:20px;">
-    <li><a href="#sobre" onclick="toggleMenu()" style="color:var(--white);text-decoration:none;font-family:Montserrat,sans-serif;font-size:0.85rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;">Sobre</a></li>
-    <li><a href="#servicos" onclick="toggleMenu()" style="color:var(--white);text-decoration:none;font-family:Montserrat,sans-serif;font-size:0.85rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;">Serviços</a></li>
-    <li><a href="#cases" onclick="toggleMenu()" style="color:var(--white);text-decoration:none;font-family:Montserrat,sans-serif;font-size:0.85rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;">Cases</a></li>
-    <li><a href="#porque" onclick="toggleMenu()" style="color:var(--white);text-decoration:none;font-family:Montserrat,sans-serif;font-size:0.85rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;">Por Que Nós</a></li>
-    <li><a href="../index.html#contato" onclick="toggleMenu()" style="color:var(--white);text-decoration:none;font-family:Montserrat,sans-serif;font-size:0.85rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;">Contato</a></li>
-     <li> <a class="nav-cta" href="../index.html#contato">Solicitar Proposta</a></li>
-  </ul>
-</div>
+      <li class="dropdown">
+        <a href="#servicos" class="dropdown-toggle">Serviços <span class="arrow">▾</span></a>
+        <div class="mega-menu mega-menu-grid">
+          <div class="mega-column">
+            <h4>Tráfego Pago</h4>
+            <p>Anúncios certeiros no Google, Meta e LinkedIn para atrair clientes.</p>
+          </div>
+          <div class="mega-column">
+            <h4>Criação de Sites</h4>
+            <p>Desenvolvimento de landing pages e sites velozes focados em conversão.</p>
+          </div>
+          <div class="mega-column">
+            <h4>Marketing</h4>
+            <p>Estratégia digital completa, posicionamento e funis inteligentes.</p>
+          </div>
+          <div class="mega-column">
+            <h4>Outros</h4>
+            <p>Soluções sob medida para a escala do seu negócio.</p>
+            <a href="#servicos">Ver tudo →</a>
+          </div>
+        </div>
+      </li>
+
+      <li><a href="#cases" class="mobile-direct-link">Cases</a></li>
+
+      <li class="dropdown">
+        <a href="#recursos" class="dropdown-toggle">Recursos <span class="arrow">▾</span></a>
+        <div class="mega-menu split-menu">
+          <div class="mega-column">
+            <h4>Materiais Ricos</h4>
+            <p>E-books, planilhas e guias práticos gratuitos.</p>
+            <a href="#materiais">Acessar Downloads →</a>
+          </div>
+          <div class="mega-column">
+            <h4>Trabalhe Conosco</h4>
+            <p>Quer fazer parte do time? Conheça nossa cultura e vagas.</p>
+            <a href="#carreiras">Ver Vagas →</a>
+          </div>
+        </div>
+      </li>
+
+      <li class="cta-container"><a class="nav-cta" href="#contato">Solicitar Proposta</a></li>
+    </ul>
+
+    <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Menu" id="hamburger-btn">
+      <span></span><span></span><span></span>
+    </button>
+
+  </nav>
+</header>
 <main id="pg-sobre">
 
   <!--INICIO-->
